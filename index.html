@@ -12,41 +12,85 @@
       line-height: 1.6;
       background: #f7f7f7;
       color: #222;
+      scroll-behavior: smooth;
     }
+
     header {
       background: #111;
       color: white;
-      padding: 3rem 1.5rem;
+      padding: 4rem 1.5rem;
       text-align: center;
     }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+    }
+
     nav {
       background: #fff;
       padding: 1rem;
       text-align: center;
       border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
+
     nav a {
-      margin: 0 12px;
+      margin: 0 10px;
       text-decoration: none;
       color: #111;
       font-weight: bold;
+      font-size: 0.95rem;
     }
+
+    nav a:hover {
+      color: #555;
+    }
+
     section {
-      max-width: 900px;
+      max-width: 950px;
       margin: 2rem auto;
       background: white;
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
-    h1, h2 {
+
+    h1, h2, h3 {
       margin-top: 0;
     }
+
+    .intro-buttons {
+      margin-top: 1.5rem;
+    }
+
+    .intro-buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.2rem;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .intro-buttons a:hover {
+      background: #333;
+    }
+
     .project {
-      margin-bottom: 1.5rem;
-      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
       border-bottom: 1px solid #eee;
     }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -55,14 +99,28 @@
   </style>
 </head>
 <body>
-  <header>
+  <header id="home">
     <h1>Arianna Nuñez</h1>
-    <p>Cybersecurity Student | ROTC Cadet | Software Developer</p>
+    <p>Cybersecurity Student | Software Developer | ROTC Cadet</p>
+    <p>
+      I am a cybersecurity student at Milwaukee School of Engineering with a strong interest in secure systems,
+      software development, and technical problem-solving.
+    </p>
+
+    <div class="intro-buttons">
+      <a href="#projects">View Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
   </header>
 
   <nav>
-    <a href="#about">About</a>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
     <a href="#projects">Projects</a>
+    <a href="#java">Java Applications</a>
+    <a href="#data">Data Structures</a>
+    <a href="#agile">Agile Team Project</a>
     <a href="#resume">Resume</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -70,42 +128,174 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am a cybersecurity student at Milwaukee School of Engineering with interests in secure systems,
-      software development, and technical problem-solving. My background in ROTC, aviation, and computing
-      has shaped me into a disciplined and analytical builder.
+      I am currently pursuing a B.S. in Cybersecurity Systems at Milwaukee School of Engineering.
+      My academic experience has helped me build a strong foundation in programming, secure systems,
+      and technical analysis.
     </p>
+    <p>
+      My background in ROTC, leadership, and aviation has shaped me into a disciplined, accountable,
+      and analytical problem-solver. I bring that same mindset into both individual and collaborative
+      technical work.
+    </p>
+    <p>
+      As I continue developing professionally, I want to grow in secure software development, systems security,
+      and technical problem-solving. My goal is to contribute to meaningful projects where I can combine
+      structure, critical thinking, and technical skill.
+    </p>
+
+    <h3>Technical Skills</h3>
+    <ul>
+      <li>Java, Python, Bash</li>
+      <li>Linux (Kali, Ubuntu), Windows Server</li>
+      <li>VMware, VirtualBox</li>
+      <li>Risk Assessment, Incident Response, Vulnerability Management, System Hardening</li>
+    </ul>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
+    <p>
+      This section highlights academic and team-based projects that reflect my technical development in
+      software engineering and cybersecurity-related problem-solving. Each project demonstrates a different
+      strength, including programming fundamentals, algorithmic thinking, collaboration, and development workflow.
+    </p>
 
     <div class="project">
-      <h3>Object-Oriented Java Application Suite</h3>
+      <h3><a href="#java">Java Applications</a></h3>
       <p>
-        Developed multiple Java applications using modular design, input validation, exception handling,
-        and file processing.
+        A collection of object-oriented Java programs focused on modular design, input validation,
+        exception handling, and file processing.
       </p>
     </div>
 
     <div class="project">
-      <h3>Custom Data Structures Implementation</h3>
+      <h3><a href="#data">Data Structures</a></h3>
       <p>
-        Built and evaluated linked lists, queues, trees, and hash-based structures, focusing on efficiency
-        and performance tradeoffs.
+        Custom implementations of linked lists, trees, queues, and hash-based structures, with analysis
+        of performance and efficiency tradeoffs.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3><a href="#agile">Agile Team Project</a></h3>
+      <p>
+        A collaborative software engineering project completed using Agile practices, version control,
+        planning, and sprint-based development.
       </p>
     </div>
   </section>
 
- <section id="resume">
-  <h2>Resume</h2>
-  <p><a href="resume.pdf" target="_blank">Download My Resume</a></p>
-</section>
+  <section id="java">
+    <h2>Java Applications</h2>
+    <p>
+      This project involved developing multiple Java applications using object-oriented programming principles.
+      The goal was to build software that was modular, reliable, and maintainable while applying concepts such
+      as classes, interfaces, exception handling, and file-based processing.
+    </p>
+
+    <h3>What I Built</h3>
+    <ul>
+      <li>Multiple Java applications with modular class structures</li>
+      <li>Programs with input validation and exception handling</li>
+      <li>Applications using file reading and writing features</li>
+    </ul>
+
+    <h3>Skills Used</h3>
+    <ul>
+      <li>Java</li>
+      <li>Object-oriented programming</li>
+      <li>Interfaces</li>
+      <li>Exception handling</li>
+      <li>File I/O</li>
+      <li>Debugging</li>
+    </ul>
+
+    <h3>Why It Matters</h3>
+    <p>
+      This project reflects my ability to write organized, maintainable code and create software that is reliable.
+      Those skills are important in both software development and cybersecurity, where secure and predictable
+      system behavior matters.
+    </p>
+  </section>
+
+  <section id="data">
+    <h2>Data Structures</h2>
+    <p>
+      This project focused on implementing core data structures from the ground up and analyzing how their design
+      affects efficiency and performance. It strengthened my understanding of how software behaves behind the scenes.
+    </p>
+
+    <h3>What I Built</h3>
+    <ul>
+      <li>Linked lists</li>
+      <li>Stacks</li>
+      <li>Queues</li>
+      <li>Trees</li>
+      <li>Hash-based structures</li>
+    </ul>
+
+    <h3>Concepts Used</h3>
+    <ul>
+      <li>Big-O analysis</li>
+      <li>Efficiency and optimization</li>
+      <li>Algorithmic thinking</li>
+      <li>Testing and debugging</li>
+    </ul>
+
+    <h3>Why It Matters</h3>
+    <p>
+      Data structures are foundational to software engineering and cybersecurity. Understanding them makes me
+      a stronger programmer because I can build solutions that are not only correct, but also efficient and scalable.
+    </p>
+  </section>
+
+  <section id="agile">
+    <h2>Agile Team Project</h2>
+    <p>
+      This was a team-based software development project completed using Agile practices. The project involved
+      planning, collaboration, feature development, and iterative improvement across multiple sprints while
+      working in a shared codebase.
+    </p>
+
+    <h3>What the Project Included</h3>
+    <ul>
+      <li>Sprint planning and task prioritization</li>
+      <li>Feature development across multiple iterations</li>
+      <li>Code integration in a shared repository</li>
+      <li>Use of UML diagrams to support planning and architecture</li>
+    </ul>
+
+    <h3>Skills Used</h3>
+    <ul>
+      <li>Java</li>
+      <li>Git / GitLab</li>
+      <li>Agile / Scrum</li>
+      <li>Team collaboration</li>
+      <li>Issue tracking</li>
+      <li>System and sequence diagrams</li>
+    </ul>
+
+    <h3>Why It Matters</h3>
+    <p>
+      This project shows that I can contribute in collaborative development environments, not just work independently.
+      It reflects my ability to communicate, manage tasks, and participate in a structured software workflow.
+    </p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>
+      You can view or download my resume below for a summary of my education, technical skills,
+      leadership experience, and project background.
+    </p>
+    <p><a href="resume.pdf" target="_blank">Download My Resume</a></p>
+  </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: agnunez0105@gmail.com</p>
-    <p>GitHub: github.com/agnunez0105</p>
-    <p>Handshake: https://msoe.joinhandshake.com/profiles/arianna_n</p>
+    <p>GitHub: <a href="https://github.com/agnunez0105" target="_blank">github.com/agnunez0105</a></p>
+    <p>Handshake: <a href="https://msoe.joinhandshake.com/profiles/arianna_n" target="_blank">Arianna on Handshake</a></p>
   </section>
 
   <footer>
