@@ -1,16 +1,27 @@
+:root {
+  --bg: #f7f7f7;
+  --card: #ffffff;
+  --text: #222222;
+  --muted: #555555;
+  --dark: #111111;
+  --blue: #102c54;
+  --light-blue: #f0f4f8;
+  --border: #dddddd;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #f7f7f7;
-  color: #222;
+  background: var(--bg);
+  color: var(--text);
 }
 
 header {
-  background: #111;
+  background: var(--dark);
   color: white;
-  padding: 4rem 1.5rem;
+  padding: 3rem 1.5rem;
   text-align: center;
 }
 
@@ -19,11 +30,17 @@ header h1 {
   font-size: 2.5rem;
 }
 
+header p {
+  max-width: 760px;
+  margin: 0.75rem auto;
+  color: #f1f1f1;
+}
+
 nav {
-  background: #fff;
+  background: white;
   padding: 1rem;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border);
 }
 
 nav a {
@@ -34,13 +51,13 @@ nav a {
 }
 
 nav a:hover {
-  color: #555;
+  color: var(--blue);
 }
 
 section {
-  max-width: 950px;
+  max-width: 900px;
   margin: 2rem auto;
-  background: white;
+  background: var(--card);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
@@ -50,17 +67,42 @@ h1, h2, h3 {
   margin-top: 0;
 }
 
+h2 {
+  color: #111;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: var(--blue);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p, li {
+  color: var(--muted);
+}
+
+a {
+  color: var(--blue);
+}
+
+a:hover {
+  color: #1d4ed8;
+}
+
 .project {
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .button {
   display: inline-block;
-  margin: 0.5rem 0.5rem 0 0;
-  padding: 0.75rem 1.2rem;
-  background: #111;
+  margin-top: 0.75rem;
+  padding: 0.7rem 1.1rem;
+  background: var(--blue);
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -68,15 +110,70 @@ h1, h2, h3 {
 }
 
 .button:hover {
-  background: #333;
+  background: #1d4ed8;
+  color: white;
 }
 
-ul {
-  padding-left: 1.2rem;
+.callout {
+  background: var(--light-blue);
+  border-left: 4px solid var(--blue);
+  padding: 1rem;
+  border-radius: 8px;
+  color: #222;
+  margin-top: 1rem;
+}
+
+figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  max-width: 550px;
+  max-height: 350px;
+  object-fit: contain;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: white;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-style: italic;
 }
 
 footer {
   text-align: center;
   padding: 2rem;
   color: #666;
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 2.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2.1rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.4rem 0;
+  }
+
+  section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 280px;
+  }
 }
