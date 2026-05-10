@@ -123,6 +123,15 @@ a:hover {
   margin-top: 1rem;
 }
 
+.note {
+  background: #f7f7f7;
+  border: 1px dashed #bbb;
+  border-radius: 8px;
+  padding: 0.9rem;
+  color: #555;
+  font-style: italic;
+}
+
 figure {
   margin: 2rem 0;
   text-align: center;
