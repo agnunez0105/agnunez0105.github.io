@@ -4,7 +4,6 @@
   --text: #222222;
   --muted: #555555;
 
-  /* Deep Crimson Theme */
   --primary: #590016;
   --primary-dark: #430011;
   --primary-light: #7a001f;
@@ -13,103 +12,98 @@
   --light-accent: #f6e9ed;
 }
 
+/* GLOBAL */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.7;
+  line-height: 1.6;
   background: var(--bg);
   color: var(--text);
 }
 
-/* ---------- HEADER ---------- */
+/* HEADER */
 
 header {
-  background: var(--primary);
+  background: var(--primary) !important;
   color: white;
-  padding: 4rem 1.5rem;
+  padding: 3rem 1.5rem;
   text-align: center;
 }
 
 header h1 {
   margin-bottom: 0.5rem;
-  font-size: 3rem;
-  letter-spacing: 0.5px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.5rem;
+  color: white;
 }
 
 header p {
-  max-width: 800px;
-  margin: 1rem auto 0 auto;
-  color: #f4f4f4;
-  font-size: 1.1rem;
+  max-width: 760px;
+  margin: 0.75rem auto;
+  color: #f1f1f1;
 }
 
-/* ---------- NAVIGATION ---------- */
+/* NAVIGATION */
 
 nav {
   background: white;
   padding: 1rem;
   text-align: center;
   border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 nav a {
-  margin: 0 16px;
+  margin: 0 12px;
   text-decoration: none;
-  color: var(--primary);
+  color: var(--primary) !important;
   font-weight: bold;
-  font-size: 1rem;
-  transition: 0.2s ease;
 }
 
 nav a:hover {
-  color: var(--primary-light);
+  color: var(--primary-light) !important;
 }
 
-/* ---------- SECTIONS ---------- */
+/* SECTIONS */
 
 section {
-  max-width: 1050px;
+  max-width: 900px;
   margin: 2rem auto;
   background: var(--card);
-  padding: 2.5rem;
-  border-radius: 14px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 h1,
 h2,
 h3 {
   margin-top: 0;
-  font-family: Georgia, "Times New Roman", serif;
 }
 
 h2 {
-  color: var(--primary);
+  color: var(--primary) !important;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.6rem;
-  margin-bottom: 1.4rem;
-  font-size: 2.2rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
-  color: var(--primary);
+  color: var(--primary) !important;
   margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 p,
 li {
   color: var(--muted);
-  font-size: 1.15rem;
 }
 
-/* ---------- LINKS ---------- */
+/* LINKS */
 
 a {
   color: var(--primary);
@@ -119,56 +113,66 @@ a:hover {
   color: var(--primary-light);
 }
 
-/* ---------- PROJECT BLOCKS ---------- */
+/* PROJECTS */
 
 .project {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #eeeeee;
 }
 
-/* ---------- BUTTONS ---------- */
+/* BUTTONS */
 
-.button {
+.button,
+a.button,
+button {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.9rem 1.4rem;
-  background: var(--primary);
-  color: white;
+  margin-top: 0.75rem;
+  padding: 0.7rem 1.1rem;
+  background: var(--primary) !important;
+  color: white !important;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 6px;
   font-weight: bold;
-  font-size: 1rem;
-  transition: 0.2s ease;
+  border: none;
 }
 
-.button:hover {
-  background: var(--primary-light);
-  color: white;
-  transform: translateY(-1px);
+.button:hover,
+a.button:hover,
+button:hover {
+  background: var(--primary-light) !important;
+  color: white !important;
 }
 
-/* ---------- DOWNLOAD BOX ---------- */
+/* CALLOUTS / DOWNLOAD BOXES */
+
+.callout {
+  background: var(--light-accent);
+  border-left: 4px solid var(--primary);
+  padding: 1rem;
+  border-radius: 8px;
+  color: #222;
+  margin-top: 1rem;
+}
+
+.note {
+  background: #f7f7f7;
+  border: 1px dashed #bbb;
+  border-radius: 8px;
+  padding: 0.9rem;
+  color: #555;
+  font-style: italic;
+}
 
 .download-box {
   background: var(--light-accent);
   border: 1px solid #e4cfd6;
-  border-radius: 12px;
-  padding: 1.5rem;
+  border-radius: 10px;
+  padding: 1.25rem;
   margin-top: 1rem;
 }
 
-/* ---------- CALLOUT ---------- */
-
-.callout {
-  background: var(--light-accent);
-  border-left: 5px solid var(--primary);
-  padding: 1rem 1.25rem;
-  border-radius: 8px;
-  margin-top: 1rem;
-}
-
-/* ---------- IMAGES ---------- */
+/* IMAGES */
 
 figure {
   margin: 2rem 0;
@@ -177,62 +181,59 @@ figure {
 
 img {
   width: 100%;
-  max-width: 650px;
-  max-height: 420px;
+  max-width: 550px;
+  max-height: 350px;
   object-fit: contain;
   display: block;
   margin: 1rem auto;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid var(--border);
   background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
 }
 
 figcaption {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #666;
   margin-top: 0.5rem;
   font-style: italic;
 }
 
-/* ---------- VIDEO ---------- */
+/* VIDEO */
 
 .demo-video {
   width: 100%;
-  max-width: 1000px;
+  max-width: 950px;
   max-height: 700px;
   display: block;
   margin: 2rem auto;
-  border-radius: 14px;
-  border: 1px solid #d7d7d7;
+  border-radius: 12px;
+  border: 1px solid #ddd;
   background: black;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
-/* ---------- FOOTER ---------- */
+/* FOOTER */
 
 footer {
   text-align: center;
   padding: 2rem;
   color: #666;
-  font-size: 1rem;
 }
 
-/* ---------- MOBILE ---------- */
+/* MOBILE */
 
-@media (max-width: 768px) {
-
+@media (max-width: 700px) {
   header {
-    padding: 3rem 1rem;
+    padding: 2.5rem 1rem;
   }
 
   header h1 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
 
   nav a {
     display: block;
-    margin: 0.6rem 0;
+    margin: 0.4rem 0;
   }
 
   section {
@@ -240,18 +241,9 @@ footer {
     padding: 1.5rem;
   }
 
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  p,
-  li {
-    font-size: 1.05rem;
-  }
-
   img {
     max-width: 100%;
-    max-height: 300px;
+    max-height: 280px;
   }
 
   .demo-video {
