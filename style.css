@@ -285,30 +285,43 @@ figcaption {
 
 .about-layout {
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 2.5rem;
-  align-items: start;
+
+  grid-template-columns: 360px 1fr;
+
+  gap: 3rem;
+
+  align-items: center;
 }
 
 .about-image {
-  text-align: left;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
 }
 
 .about-image img {
   width: 100%;
+
   max-width: 320px;
-  max-height: none;
+
+  height: auto;
 
   margin: 0;
 
   object-fit: cover;
+
   display: block;
 
   border-radius: 14px;
+
   border: none;
 
   background: transparent;
-  box-shadow: none;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
 .about-content {
@@ -385,15 +398,15 @@ footer {
 
   .about-layout {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+
+    gap: 2rem;
   }
 
   .about-image {
-    text-align: center;
+    justify-content: center;
   }
 
   .about-image img {
-    margin: 0 auto;
     max-width: 280px;
   }
 
