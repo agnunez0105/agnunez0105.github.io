@@ -11,7 +11,7 @@
 
 <header>
   <h1>Employee Health Manager Dashboard</h1>
-  <p>Agile software engineering project using JavaFX, SQLite, and real-time health metrics</p>
+  <p>Agile software engineering project using JavaFX, SQLite, and MQTT integration</p>
 </header>
 
 <nav>
@@ -27,14 +27,15 @@
 
   <p>
     The Employee Health Manager Dashboard is a JavaFX-based desktop application designed
-    for managers to monitor real-time and historical employee health metrics. The application
-    tracks BPM, readiness scores, and daily step counts using a local SQLite database.
+    for managers to monitor real-time and historical employee health metrics. The system
+    integrates MQTT communication, SQLite database management, Docker containerization,
+    and wearable device simulation.
   </p>
 
   <p>
-    This project was developed as part of a collaborative Agile software engineering effort.
-    The goal was to create a centralized dashboard that helps managers view employee health
-    data clearly and efficiently.
+    This project was developed as part of a collaborative Agile software engineering effort
+    focused on building a centralized dashboard for viewing employee health data clearly
+    and efficiently.
   </p>
 </section>
 
@@ -43,15 +44,16 @@
 
   <p>
     Managers need a centralized way to review employee health information and identify
-    patterns across real-time and historical data. Without a dashboard, health metrics can be
-    harder to monitor, compare, and act on efficiently.
+    patterns across real-time and historical data. Without a dashboard, health metrics can
+    become difficult to monitor, compare, and act on efficiently.
   </p>
 
   <ul>
-    <li>Employee health data needed to be visible in one place.</li>
-    <li>Managers needed filtering tools to identify concerning trends.</li>
-    <li>The application needed persistent data storage across sessions.</li>
-    <li>The interface needed to stay responsive while working with database operations.</li>
+    <li>Employee health data needed to be visible in one place</li>
+    <li>Managers needed filtering tools to identify concerning trends</li>
+    <li>The application needed persistent data storage across sessions</li>
+    <li>The interface needed to stay responsive while working with database operations</li>
+    <li>WearOS device communication needed MQTT integration support</li>
   </ul>
 </section>
 
@@ -59,45 +61,49 @@
   <h2>Role & Contributions</h2>
 
   <p>
-    My role involved contributing to the team’s Agile development workflow, implementation,
-    debugging, documentation, and project refinement.
+    My role involved contributing to the Agile development workflow, implementation,
+    debugging, Docker setup integration, MQTT broker communication, and project refinement.
   </p>
 
   <ul>
-    <li>Participated in sprint planning and team development workflows</li>
-    <li>Worked with Git and GitLab for version control</li>
-    <li>Contributed to feature development and debugging</li>
-    <li>Supported dashboard interface functionality and usability</li>
-    <li>Helped document setup, dependencies, and known project behavior</li>
+    <li>Participated in sprint planning and Agile workflows</li>
+    <li>Worked with Git and GitLab version control</li>
+    <li>Supported dashboard interface functionality and debugging</li>
+    <li>Contributed to Docker and MQTT communication setup</li>
+    <li>Helped document dependencies, setup, and project architecture</li>
   </ul>
 </section>
 
 <section>
-  <h2>Process</h2>
+  <h2>Technical Process</h2>
 
-  <h3>Technical Direction</h3>
+  <h3>Architecture</h3>
+
   <p>
-    The application was built with JavaFX and used SQLite for local data persistence.
-    The architecture used a DAO pattern to separate database access from application logic,
-    making the system more modular and maintainable.
+    The project was built using JavaFX for the user interface, SQLite for local
+    persistence, Docker for MQTT infrastructure deployment, and simulated WearOS
+    devices for health metric communication.
   </p>
 
   <h3>Key Features</h3>
+
   <ul>
-    <li>Centralized dashboard using a TableView</li>
-    <li>Filtering by employee name and health thresholds</li>
-    <li>SQLite database for persistent historical health data</li>
-    <li>Background processing for smoother UI performance</li>
-    <li>Dedicated windows and controllers for adding employees and recording metrics</li>
+    <li>Centralized manager dashboard</li>
+    <li>Real-time employee health monitoring</li>
+    <li>MQTT-based communication pipeline</li>
+    <li>SQLite persistent database storage</li>
+    <li>Dockerized MQTT broker setup</li>
+    <li>WearOS device integration simulation</li>
   </ul>
 
-  <h3>Tech Stack</h3>
+  <h3>Technologies Used</h3>
+
   <ul>
-    <li>Java 17+</li>
+    <li>Java</li>
     <li>JavaFX</li>
     <li>SQLite</li>
-    <li>JDBC</li>
-    <li>DAO architecture</li>
+    <li>MQTT</li>
+    <li>Docker</li>
     <li>Git / GitLab</li>
     <li>Agile / Scrum</li>
   </ul>
@@ -120,37 +126,39 @@
   <h2>Project Files & Setup</h2>
 
   <p>
-    The project README includes setup instructions, prerequisites, dependencies,
-    database structure, known bugs, and run instructions for the application.
+    The downloadable build includes the project source files, Docker configuration,
+    MQTT setup, dependencies, and setup instructions needed to run the application locally.
   </p>
 
-  <p>
-    <a class="button" href="project-files/manager-dashboard-readme.md" target="_blank">
-      View Project README
+  <div class="download-box">
+
+    <h3>Download Runnable Build</h3>
+
+    <p>
+      Download the project build and follow the included README instructions
+      to configure Docker, MQTT communication, and run the dashboard locally.
+    </p>
+
+    <a class="button" href="downloads/manager-dashboard-build.zip" download>
+      Download Build Files
     </a>
-  </p>
 
-  <h3>Runnable Build</h3>
+  </div>
 
-  <p>
-    Because the runnable build ZIP is larger than GitHub’s browser upload limit,
-    the build should be shared through a GitHub Release or another hosted download link.
-    Once uploaded, this section can link directly to the release asset.
-  </p>
-
-  <p class="note">
-    Runnable build download coming soon.
-  </p>
 </section>
 
 <section>
   <h2>Outcome</h2>
 
   <p>
-    The final project strengthened my experience working in a shared codebase, contributing
-    to a team-based software application, and communicating through Agile development practices.
-    It also helped me better understand how software design decisions affect usability,
-    maintainability, and workflow clarity.
+    This project strengthened my experience with collaborative software engineering,
+    Agile development practices, Docker containerization, MQTT communication systems,
+    JavaFX UI development, and full-stack application debugging.
+  </p>
+
+  <p>
+    It also improved my understanding of how software architecture decisions impact
+    usability, maintainability, and system integration.
   </p>
 </section>
 
