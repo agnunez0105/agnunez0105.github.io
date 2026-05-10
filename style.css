@@ -27,7 +27,8 @@ body {
   color: #222222;
 }
 
-/* This forces the visible area behind cards to be wine red on every page */
+/* ---------- MAIN WRAPPERS ---------- */
+
 main,
 .container,
 .content,
@@ -39,7 +40,7 @@ main,
   background-image: none !important;
 }
 
-/* ---------- HEADER: BLACK ---------- */
+/* ---------- HEADER ---------- */
 
 header {
   background-color: #010203 !important;
@@ -69,7 +70,7 @@ header p {
   font-size: 1.08rem;
 }
 
-/* ---------- NAVIGATION: WHITE BAR, RED TEXT ---------- */
+/* ---------- NAVIGATION ---------- */
 
 nav {
   background-color: #ffffff !important;
@@ -98,7 +99,7 @@ nav a:hover {
   color: #5c1611 !important;
 }
 
-/* ---------- CONTENT CARDS: WHITE / OFF-WHITE ---------- */
+/* ---------- CONTENT CARDS ---------- */
 
 section {
   max-width: 980px;
@@ -148,7 +149,7 @@ section h3 {
   margin-bottom: 0.75rem;
 }
 
-/* ---------- TEXT INSIDE CARDS ---------- */
+/* ---------- TEXT ---------- */
 
 section p,
 section li {
@@ -179,7 +180,7 @@ a:hover {
   border-bottom: 1px solid #ececec;
 }
 
-/* ---------- BUTTONS: RED ---------- */
+/* ---------- BUTTONS ---------- */
 
 .button,
 a.button,
@@ -280,6 +281,40 @@ figcaption {
   font-style: italic;
 }
 
+/* ---------- ABOUT PAGE LAYOUT ---------- */
+
+.about-layout {
+  display: flex;
+
+  align-items: flex-start;
+  gap: 2.5rem;
+
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 260px;
+
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 320px;
+
+  border-radius: 18px;
+
+  border: 1px solid #dddddd;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.about-content {
+  flex: 2;
+  min-width: 300px;
+}
+
 /* ---------- VIDEO ---------- */
 
 .demo-video {
@@ -350,5 +385,15 @@ footer {
 
   .demo-video {
     max-width: 100%;
+  }
+
+  .about-layout {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .about-content {
+    width: 100%;
   }
 }
