@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arianna Nuñez | Agile Team Project</title>
+  <title>Arianna Nuñez | Employee Health Manager Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <h1>Agile Team Project</h1>
-  <p>Collaborative software engineering and manager dashboard development</p>
+  <h1>Employee Health Manager Dashboard</h1>
+  <p>Agile software engineering project using JavaFX, SQLite, and real-time health metrics</p>
 </header>
 
 <nav>
@@ -26,50 +26,85 @@
   <h2>Project Overview</h2>
 
   <p>
-    This was a collaborative software engineering project completed using Agile
-    development practices. The project focused on building a Manager Dashboard
-    application to support employee management, scheduling, and workflow organization.
+    The Employee Health Manager Dashboard is a JavaFX-based desktop application designed
+    for managers to monitor real-time and historical employee health metrics. The application
+    tracks BPM, readiness scores, and daily step counts using a local SQLite database.
   </p>
-
-  <h3>Problem</h3>
 
   <p>
-    Managers often need a centralized system to view employee information, manage
-    schedules, and complete administrative tasks efficiently. The challenge was to
-    create a dashboard that made those workflows easier to access and understand.
+    This project was developed as part of a collaborative Agile software engineering effort.
+    The goal was to create a centralized dashboard that helps managers view employee health
+    data clearly and efficiently.
+  </p>
+</section>
+
+<section>
+  <h2>Problem</h2>
+
+  <p>
+    Managers need a centralized way to review employee health information and identify
+    patterns across real-time and historical data. Without a dashboard, health metrics can be
+    harder to monitor, compare, and act on efficiently.
   </p>
 
-  <h3>Role & Contributions</h3>
+  <ul>
+    <li>Employee health data needed to be visible in one place.</li>
+    <li>Managers needed filtering tools to identify concerning trends.</li>
+    <li>The application needed persistent data storage across sessions.</li>
+    <li>The interface needed to stay responsive while working with database operations.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Role & Contributions</h2>
+
+  <p>
+    My role involved contributing to the team’s Agile development workflow, implementation,
+    debugging, documentation, and project refinement.
+  </p>
 
   <ul>
-    <li>Participated in sprint planning and Agile workflows</li>
-    <li>Collaborated on feature development and debugging</li>
-    <li>Worked with Git and version control practices</li>
-    <li>Contributed to dashboard interface functionality</li>
-    <li>Supported software documentation and testing</li>
+    <li>Participated in sprint planning and team development workflows</li>
+    <li>Worked with Git and GitLab for version control</li>
+    <li>Contributed to feature development and debugging</li>
+    <li>Supported dashboard interface functionality and usability</li>
+    <li>Helped document setup, dependencies, and known project behavior</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Process</h2>
+
+  <h3>Technical Direction</h3>
+  <p>
+    The application was built with JavaFX and used SQLite for local data persistence.
+    The architecture used a DAO pattern to separate database access from application logic,
+    making the system more modular and maintainable.
+  </p>
+
+  <h3>Key Features</h3>
+  <ul>
+    <li>Centralized dashboard using a TableView</li>
+    <li>Filtering by employee name and health thresholds</li>
+    <li>SQLite database for persistent historical health data</li>
+    <li>Background processing for smoother UI performance</li>
+    <li>Dedicated windows and controllers for adding employees and recording metrics</li>
   </ul>
 
-  <h3>Process</h3>
-
-  <p>
-    The team worked through iterative development cycles using sprint planning,
-    version control, and testing to refine the dashboard. We focused on building
-    features that were functional, understandable, and useful for a manager-facing
-    workflow.
-  </p>
-
-  <h3>Skills Used</h3>
-
+  <h3>Tech Stack</h3>
   <ul>
-    <li>Java</li>
+    <li>Java 17+</li>
     <li>JavaFX</li>
+    <li>SQLite</li>
+    <li>JDBC</li>
+    <li>DAO architecture</li>
     <li>Git / GitLab</li>
     <li>Agile / Scrum</li>
-    <li>UI development</li>
-    <li>Team collaboration</li>
   </ul>
+</section>
 
-  <h3>Final Demo</h3>
+<section>
+  <h2>Final Demo</h2>
 
   <p>
     Demonstration video of the completed Manager Dashboard project.
@@ -79,16 +114,41 @@
     <source src="videos/final-manager-dashboard-demo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+</section>
 
-  <h3>Outcome</h3>
+<section>
+  <h2>Project Files & Setup</h2>
 
   <p>
-    The final project strengthened my experience working in a shared codebase,
-    contributing to a team-based software application, and communicating through
-    Agile development practices. It also helped me better understand how software
-    design decisions affect usability and workflow clarity.
+    The project README includes setup instructions, prerequisites, dependencies, database
+    structure, and run instructions for the application.
   </p>
 
+  <p>
+    <a class="button" href="README.md" target="_blank">View Project README</a>
+  </p>
+
+  <h3>APK / Runnable Build</h3>
+
+  <p>
+    A packaged build folder will be added once it is finalized. This section will later include
+    the files needed for someone to run the application locally.
+  </p>
+
+  <p class="note">
+    APK/build files coming soon.
+  </p>
+</section>
+
+<section>
+  <h2>Outcome</h2>
+
+  <p>
+    The final project strengthened my experience working in a shared codebase, contributing
+    to a team-based software application, and communicating through Agile development practices.
+    It also helped me better understand how software design decisions affect usability,
+    maintainability, and workflow clarity.
+  </p>
 </section>
 
 <footer>
