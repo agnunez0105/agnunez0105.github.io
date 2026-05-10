@@ -247,7 +247,7 @@ button:hover {
   font-style: italic;
 }
 
-/* ---------- IMAGES ---------- */
+/* ---------- GENERAL IMAGES ---------- */
 
 figure {
   margin: 2rem 0;
@@ -284,48 +284,51 @@ figcaption {
 /* ---------- ABOUT PAGE LAYOUT ---------- */
 
 .about-layout {
-  display: grid;
+  display: grid !important;
 
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: 360px 1fr !important;
 
-  gap: 3rem;
+  column-gap: 3rem !important;
 
-  align-items: center;
+  align-items: center !important;
 }
 
 .about-image {
-  display: flex;
+  display: flex !important;
 
-  justify-content: center;
-  align-items: center;
+  justify-content: center !important;
+  align-items: center !important;
 
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
 }
 
-.about-image img {
-  width: 100%;
+/* This overrides the general img styling above */
+section .about-layout .about-image img {
+  width: 320px !important;
+  max-width: 320px !important;
+  min-width: 320px !important;
 
-  max-width: 320px;
+  height: auto !important;
+  max-height: none !important;
 
-  height: auto;
+  object-fit: cover !important;
 
-  margin: 0;
+  margin: 0 auto !important;
 
-  object-fit: cover;
+  display: block !important;
 
-  display: block;
+  border-radius: 14px !important;
 
-  border-radius: 14px;
+  border: none !important;
 
-  border: none;
+  background: transparent !important;
 
-  background: transparent;
-
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15) !important;
 }
 
 .about-content {
-  min-width: 0;
+  min-width: 0 !important;
 }
 
 /* ---------- VIDEO ---------- */
@@ -397,17 +400,18 @@ footer {
   }
 
   .about-layout {
-    grid-template-columns: 1fr;
-
-    gap: 2rem;
+    grid-template-columns: 1fr !important;
+    row-gap: 2rem !important;
   }
 
   .about-image {
-    justify-content: center;
+    justify-content: center !important;
   }
 
-  .about-image img {
-    max-width: 280px;
+  section .about-layout .about-image img {
+    width: 280px !important;
+    max-width: 280px !important;
+    min-width: 0 !important;
   }
 
   .demo-video {
