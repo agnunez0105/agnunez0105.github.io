@@ -147,14 +147,16 @@ figcaption {
   font-style: italic;
 }
 
-video {
+.demo-video {
   width: 100%;
-  max-width: 750px;
+  max-width: 950px;
+  max-height: 700px;
   display: block;
-  margin: 1.5rem auto;
-  border-radius: 10px;
-  border: 1px solid var(--border);
+  margin: 2rem auto;
+  border-radius: 12px;
+  border: 1px solid #ddd;
   background: black;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
 footer {
@@ -187,7 +189,7 @@ footer {
     max-height: 280px;
   }
 
-  video {
+  .demo-video {
     max-width: 100%;
   }
 }
