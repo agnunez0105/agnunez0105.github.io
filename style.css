@@ -1,5 +1,5 @@
 :root {
-  --bg: #010203;
+  --bg: #4A4A4A;
   --card: #f8f8f8;
   --text: #222222;
   --muted: #555555;
@@ -19,8 +19,8 @@ body {
   margin: 0;
   padding: 0;
 
-  background-color: #010203 !important;
-  background: #010203 !important;
+  background-color: #4A4A4A !important;
+  background: #4A4A4A !important;
 
   color: var(--text);
 
@@ -107,7 +107,7 @@ section {
   border-radius: 14px;
 
   box-shadow:
-    0 6px 24px rgba(0,0,0,0.45),
+    0 6px 24px rgba(0,0,0,0.35),
     0 1px 2px rgba(255,255,255,0.02);
 
   border: 1px solid rgba(255,255,255,0.03);
@@ -316,7 +316,7 @@ footer {
 
   padding: 2rem;
 
-  color: #c8c8c8;
+  color: #f2f2f2;
 
   font-size: 0.95rem;
 
